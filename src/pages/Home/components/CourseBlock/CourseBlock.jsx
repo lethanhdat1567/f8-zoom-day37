@@ -11,8 +11,8 @@ function CourseBlock({ title, courses }) {
             <h2 className={cx("title")}>{title}</h2>
             <div className={cx("courses-wrapper")}>
                 <div className="row row-cols-4 g-4">
-                    {courses.map((course) => (
-                        <CourseCard key={courses.id} item={course} />
+                    {courses.map((course, index) => (
+                        <CourseCard key={index} item={course} />
                     ))}
                 </div>
             </div>
