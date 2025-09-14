@@ -1,0 +1,12 @@
+.btn {
+    min-width: 120px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    transition: ease 0.2s;
+
+    &:hover {
+        border-color: #000;
+    }
+}

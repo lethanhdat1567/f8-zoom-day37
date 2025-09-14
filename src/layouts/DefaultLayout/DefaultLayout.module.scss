@@ -1,0 +1,9 @@
+.body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 1;
+    min-height: calc(100vh - $header-h - 2px);
+}

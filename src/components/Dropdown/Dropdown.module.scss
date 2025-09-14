@@ -1,0 +1,108 @@
+.wrapper {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 99;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* --- Center positions --- */
+    &.bottom {
+        top: 100%;
+        left: 50%;
+        margin-top: 8px; // cách target 8px
+        transform: translate(-50%, -10px);
+
+        &.active {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &.top {
+        bottom: 100%;
+        left: 50%;
+        margin-bottom: 8px;
+        transform: translate(-50%, 10px);
+
+        &.active {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &.left {
+        right: 100%;
+        top: 50%;
+        margin-right: 8px;
+        transform: translate(10px, -50%);
+
+        &.active {
+            transform: translate(0, -50%);
+        }
+    }
+
+    &.right {
+        left: 100%;
+        top: 50%;
+        margin-left: 8px;
+        transform: translate(-10px, -50%);
+
+        &.active {
+            transform: translate(0, -50%);
+        }
+    }
+
+    /* --- Corner positions --- */
+    &.top-left {
+        bottom: 100%;
+        left: 0;
+        margin-bottom: 8px;
+        transform: translateY(10px);
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &.top-right {
+        bottom: 100%;
+        right: 0;
+        margin-bottom: 8px;
+        transform: translateY(10px);
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &.bottom-left {
+        top: 100%;
+        left: 0;
+        margin-top: 8px;
+        transform: translateY(-10px);
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &.bottom-right {
+        top: 100%;
+        right: 0;
+        margin-top: 8px;
+        transform: translateY(-10px);
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+}

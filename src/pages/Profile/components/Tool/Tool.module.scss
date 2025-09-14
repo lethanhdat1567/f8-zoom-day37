@@ -1,0 +1,38 @@
+.wrap {
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 999px;
+    border: 1px solid #001b2d0d;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    color: #54616c;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: ease 0.2s;
+
+    &:hover {
+        background-color: rgb(237 240 242);
+    }
+
+    &.destroy:hover {
+        background-color: rgb(255, 0, 0, 0.2);
+        color: red;
+    }
+
+    .btn-text {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+    position: relative;
+    margin-right: 16px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    color: #333;
+    background-color: transparent;
+}
+
+.header {
+    padding: 14px 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .link-more {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-left: auto;
+        color: #f05123;
+        padding: 8px;
+        border-radius: 4px;
+        transition: ease 0.2s;
+
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}

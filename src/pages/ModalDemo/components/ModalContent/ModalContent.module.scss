@@ -1,0 +1,30 @@
+.content {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+
+    .close-btn {
+        position: absolute;
+        border: none;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .desc {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+}

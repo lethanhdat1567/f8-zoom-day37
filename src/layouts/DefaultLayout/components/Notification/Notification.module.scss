@@ -1,0 +1,30 @@
+.wrapper {
+    position: relative;
+    margin-right: 20px;
+}
+
+.bell-wrap {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon {
+    color: #707070;
+}
+
+.bagde {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

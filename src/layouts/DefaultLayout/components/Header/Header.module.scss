@@ -1,0 +1,19 @@
+.wrapper {
+    height: $header-h;
+    background-color: #ccc;
+    position: sticky;
+    top: 0;
+    padding: 0px 28px;
+    border-bottom: 1px solid #e8ebed;
+    background-color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}

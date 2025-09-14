@@ -1,0 +1,96 @@
+.item {
+    background: #00000008;
+    border-radius: 16px;
+    transition: ease 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 8px #0000001a;
+    }
+    .thumbnail-wrap {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-top: 56.25%;
+        border-radius: 16px 16px 0 0;
+        object-fit: cover;
+        overflow: hidden;
+        .thumbnail {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        padding: 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .title {
+            color: #292929;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            overflow: hidden;
+            word-wrap: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+
+            .old-price {
+                font-size: 1.4rem;
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .more-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #666;
+            font-size: 1.4rem;
+
+            .info-item-avatar {
+                width: 2rem;
+                height: 2rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        .timer {
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            .timer-text {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.current-price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f05123;
+}
