@@ -9,7 +9,7 @@ export default [
     { ignores: ["dist", "build"] },
 
     {
-        files: ["**/*.{js,jsx,ts,tsx}"],
+        files: ["**/*.{js,jsx}"],
 
         languageOptions: {
             ecmaVersion: "latest",
@@ -32,8 +32,8 @@ export default [
 
             // react
             ...react.configs.recommended.rules,
-            "react/jsx-no-undef": "error", // 🚨 JSX chưa import (BrowserRouter, Route...)
-            "react/react-in-jsx-scope": "off", // React 17+ không cần import React
+            "react/jsx-no-undef": "error",
+            "react/react-in-jsx-scope": "off",
             "react/jsx-uses-react": "off",
 
             // react hooks

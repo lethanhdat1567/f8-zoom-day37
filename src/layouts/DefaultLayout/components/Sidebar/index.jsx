@@ -26,6 +26,16 @@ const navData = [
         label: "Scroll Demo",
         icon: ArrowUpCircle,
     },
+    {
+        path: "/performance-demo",
+        label: "Performance Demo",
+        icon: ArrowUpCircle,
+    },
+    {
+        path: "/focus-demo",
+        label: "Focus Demo",
+        icon: ArrowUpCircle,
+    },
 ];
 
 function Sidebar() {

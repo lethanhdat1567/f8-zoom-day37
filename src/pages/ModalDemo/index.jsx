@@ -7,6 +7,7 @@ import OverlayModal from "./components/OverlayModal/OverlayModal";
 import ESCModal from "./components/ESCModal/ESCModal";
 import CustomModal from "./components/CustomModal/CustomModal";
 import CallBackModal from "./components/CallBackModal/CallBackModal";
+import RefModal from "./components/RefModal/RefModal";
 
 const cx = classNames.bind(styles);
 
@@ -19,6 +20,8 @@ function ModalDemo() {
             <ESCModal />
             <CustomModal />
             <CallBackModal />
+            <RefModal title={"Ref modal"} />
+            <RefModal title={"Toggle ref modal"} />
         </div>
     );
 }
