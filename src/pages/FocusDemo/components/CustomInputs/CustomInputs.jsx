@@ -1,3 +1,4 @@
+// @ts-nocheck
 import classNames from "classnames/bind";
 import styles from "./CustomInputs.module.scss";
 import CustomInput from "@/components/CustomInput/CustomInput";
@@ -24,15 +25,15 @@ function CustomInputs() {
 
     function handleClearValue() {
         if (input1Ref && input2Ref) {
-            input1Ref.current.value = "";
-            input2Ref.current.value = "";
+            input1Ref.current.setValue("");
+            input2Ref.current.setValue("");
         }
     }
 
     function handleGetValues() {
         if (input1Ref && input2Ref) {
             alert(
-                `Input 1: ${input1Ref.current.value}\nInput 2: ${input2Ref.current.value}`
+                `Input 1: ${input1Ref.current.getValue()}\nInput 2: ${input2Ref.current.getValue()}`
             );
         }
     }

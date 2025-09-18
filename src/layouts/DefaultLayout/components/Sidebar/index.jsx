@@ -1,6 +1,16 @@
 import classNames from "classnames/bind";
 import styles from "./Sidebar.module.scss";
-import { ArrowUpCircle, Home, Monitor, User } from "lucide-react";
+import {
+    ArrowUpCircle,
+    ChevronsUp,
+    Columns3Cog,
+    Gavel,
+    Home,
+    Monitor,
+    ScanSearch,
+    Signature,
+    User,
+} from "lucide-react";
 import { NavLink } from "react-router";
 
 const cx = classNames.bind(styles);
@@ -29,27 +39,27 @@ const navData = [
     {
         path: "/performance-demo",
         label: "Performance Demo",
-        icon: ArrowUpCircle,
+        icon: ChevronsUp,
     },
     {
         path: "/focus-demo",
         label: "Focus Demo",
-        icon: ArrowUpCircle,
+        icon: ScanSearch,
     },
     {
         path: "/hoc-demo",
         label: "HOC Demo",
-        icon: ArrowUpCircle,
+        icon: Columns3Cog,
     },
     {
         path: "/render-props-demo",
         label: "Render Props",
-        icon: ArrowUpCircle,
+        icon: Signature,
     },
     {
         path: "/custom-hooks-demo",
         label: "Custom Hook Props",
-        icon: ArrowUpCircle,
+        icon: Gavel,
     },
 ];
 

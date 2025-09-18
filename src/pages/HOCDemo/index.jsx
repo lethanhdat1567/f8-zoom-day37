@@ -22,6 +22,8 @@ function HOCDemo() {
                 </section>
             </div>
             <TriggerBtns
+                userLoading={userLoading}
+                productLoading={productLoading}
                 onToggleProduct={() => {
                     setProductLoading(!productLoading);
                 }}

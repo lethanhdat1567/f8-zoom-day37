@@ -13,13 +13,19 @@ const ActionButtons = memo(({ onIncrement, onReset }) => {
     return (
         <div className={cx("wrap")}>
             <Button
-                className={cx("action-btn")}
+                className={cx("action-btn", "count")}
                 size="large"
                 onClick={onIncrement}
+                primary
             >
                 Increment
             </Button>
-            <Button className={cx("action-btn")} size="large" onClick={onReset}>
+            <Button
+                className={cx("action-btn", "reset")}
+                size="large"
+                onClick={onReset}
+                primary
+            >
                 Reset
             </Button>
         </div>

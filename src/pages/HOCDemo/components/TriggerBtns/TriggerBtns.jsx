@@ -5,13 +5,18 @@ import PropTypes from "prop-types";
 
 const cx = classNames.bind(styles);
 
-function TriggerBtns({ onToggleUser, onToggleProduct }) {
+function TriggerBtns({
+    userLoading,
+    productLoading,
+    onToggleUser,
+    onToggleProduct,
+}) {
     return (
         <div className={cx("wrap")}>
-            <Button primary onClick={onToggleUser}>
+            <Button primary={userLoading} onClick={onToggleUser}>
                 Toggle loading User Profile
             </Button>
-            <Button primary onClick={onToggleProduct}>
+            <Button primary={productLoading} onClick={onToggleProduct}>
                 Toggle loading Product list
             </Button>
         </div>
@@ -19,6 +24,8 @@ function TriggerBtns({ onToggleUser, onToggleProduct }) {
 }
 
 TriggerBtns.propTypes = {
+    userLoading: PropTypes.bool,
+    productLoading: PropTypes.bool,
     onToggleUser: PropTypes.func,
     onToggleProduct: PropTypes.func,
 };

@@ -78,6 +78,7 @@ function PerformanceDemo() {
                         size="large"
                         className={cx("btn-item")}
                         onClick={handleChangeName}
+                        primary
                     >
                         Change name
                     </Button>

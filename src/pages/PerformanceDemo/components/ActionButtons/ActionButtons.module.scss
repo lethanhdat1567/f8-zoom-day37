@@ -12,4 +12,18 @@
 
 .action-btn {
     width: 100%;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.count {
+        background-color: oklch(71.785% 0.17 13.118);
+        border-color: oklch(71.785% 0.17 13.118);
+    }
+
+    &.reset {
+        background-color: oklch(75.351% 0.138 232.661);
+        border-color: oklch(75.351% 0.138 232.661);
+    }
 }
