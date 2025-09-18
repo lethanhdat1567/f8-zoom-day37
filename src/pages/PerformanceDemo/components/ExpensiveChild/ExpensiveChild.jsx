@@ -8,15 +8,41 @@ const cx = classNames.bind(styles);
 
 // @ts-ignore
 const ExpensiveChild = memo(({ items }) => {
+    // Log re-render
     console.log("ExpensiveChild: ", "component re-render");
 
     const totalNameLength = useMemo(() => {
         console.log("Tính toán nặng");
-
         return items.reduce((acc, cur) => {
             return acc + cur.name.length;
         }, 0);
     }, [items]);
+
+    // Tính toán nặng: tìm item có tên dài nhất
+    const expensiveCalculation = useMemo(() => {
+        console.log("Calculating longest name...");
+        let longest = "";
+        items.forEach((item) => {
+            for (let i = 0; i < 100000; i++) {}
+            if (item.name.length > longest.length) {
+                longest = item.name;
+            }
+        });
+        return longest;
+    }, [items]);
+
+    // Without useMemo
+    // const expensiveCalculation = (() => {
+    //     console.log("Calculating longest name...");
+    //     let longest = "";
+    //     items.forEach((item) => {
+    //         for (let i = 0; i < 10000000; i++) {}
+    //         if (item.name.length > longest.length) {
+    //             longest = item.name;
+    //         }
+    //     });
+    //     return longest;
+    // })();
 
     return (
         <div className={cx("list-wrap")}>
@@ -28,7 +54,12 @@ const ExpensiveChild = memo(({ items }) => {
                 ))}
             </ul>
             <div className={cx("footer")}>
-                <span className={cx("total")}>Total: {totalNameLength}</span>
+                <span className={cx("total")}>
+                    Tổng độ dài của các tên: {totalNameLength}
+                </span>
+                <span className={cx("total")}>
+                    Tên có độ dài dài nhất: {expensiveCalculation}
+                </span>
             </div>
         </div>
     );

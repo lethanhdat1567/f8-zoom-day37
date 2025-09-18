@@ -36,6 +36,21 @@ const navData = [
         label: "Focus Demo",
         icon: ArrowUpCircle,
     },
+    {
+        path: "/hoc-demo",
+        label: "HOC Demo",
+        icon: ArrowUpCircle,
+    },
+    {
+        path: "/render-props-demo",
+        label: "Render Props",
+        icon: ArrowUpCircle,
+    },
+    {
+        path: "/custom-hooks-demo",
+        label: "Custom Hook Props",
+        icon: ArrowUpCircle,
+    },
 ];
 
 function Sidebar() {
